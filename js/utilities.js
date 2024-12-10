@@ -24,9 +24,11 @@ function getSum(number1, number2){
 //     return balance;
 // }
 
-function validationInputField(id){
-    const input=document.getElementById(id).value;
-    if(isNaN(input) || input <0){
-        return 'invalid input field';
-    }
-}
+// function validationInputField(id){
+// //     const input=document.getElementById(id).value;
+// //     if(isNaN(input) || input <0){
+// //         return 'invalid input field';
+// //     }
+// // }
+
+// function addToHistory()

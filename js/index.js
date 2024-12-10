@@ -144,5 +144,11 @@ document.getElementById('history-container').classList.remove('hidden');
 
 });
 
+donationTab.addEventListener('click', function(){
+donationTab.classList.add('bg-primary-color');
+historyTab.classList.remove('bg-primary-color');
+const cardSection=document.getElementById('card-section');
+cardSection.classList.remove('hidden');
+});
 
 
