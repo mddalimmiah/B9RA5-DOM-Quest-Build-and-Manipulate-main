@@ -85,13 +85,13 @@
             <div class="flex justify-center gap-5 mt-10 lg:mt-20 mb-6">
                 <button
                   id="donation-tab"
-                  class="btn py-4 px-8 rounded-lg focus:outline-none transition-colors duration-200 text-[#111111] font-semibold bg-primary-color"
+                  class="btn py-4 px-8 rounded-lg focus:outline-none transition-colors duration-200  text-black font-semibold bg-primary-color"
                 >
                  Donation
                 </button>
                 <button
                   id="history-tab"
-                  class="btn py-4 px-8 rounded-r-md focus:outline-none transition-colors duration-200  text-[rgba(17, 17, 17, 0.7)] font-semibold"
+                  class="btn py-4 px-8 rounded-r-md focus:outline-none transition-colors duration-200  text-black font-semibold"
                 >
                   History
                 </button>
@@ -99,7 +99,7 @@
         </div>
     </header>
     <main class="container mx-auto mt-10">
-      <div class="w-full mx-auto">
+      <div id="card-section" class="w-full mx-auto">
         <!-- card-1 -->
         <div class="hero bg-base-200 min-h-screen px-10 py-10">
           <div class=" flex flex-col lg:flex-row gap-8 justify-between w-full">
@@ -109,7 +109,7 @@
               class="max-w-full rounded-lg shadow-2xl " />
             <div class="max-w-full">
               <div class="flex gap-1"><img src="./assets/coin.png" alt=""><span id="donation-1">0</span> BDT</div>
-              <h1 class="text-xl font-bold mb-7">Donate for Flood at Noakhali, Bangladesh</h1>
+              <h1 class="text-xl font-bold mb-7">Donate for Flood <span id="address-1">at Noakhali, Bangladesh</span></h1>
               <p class="py-6 font-light text-base mb-4">
                 The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
               </p>
@@ -135,7 +135,7 @@
               class="max-w-full rounded-lg shadow-2xl " />
             <div class="max-w-full">
               <div class="flex gap-1"><img src="./assets/coin.png" alt=""><span id="donation-2">0</span> BDT</div>
-              <h1 class="text-xl font-bold mb-7">Donate for Flood Relief in Feni,Bangladesh</h1>
+              <h1 class="text-xl font-bold mb-7">Donate for Flood Relief <span id="address-2">in Feni,Bangladesh</span></h1>
               <p class="py-6 font-light text-base mb-4">
                 The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
               </p>
@@ -153,7 +153,7 @@
               class="max-w-full rounded-lg shadow-2xl " />
             <div class="max-w-full">
               <div class="flex gap-1"><img src="./assets/coin.png" alt=""><span id="donation-3">0</span> BDT</div>
-              <h1 class="text-xl font-bold mb-7">Aid for Injured in the Quota Movement</h1>
+              <h1 class="text-xl font-bold mb-7">Aid for Injured in <span id="address-3">the Quota Movement</span></h1>
               <p class="py-6 font-light text-base mb-4">
                 The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
               </p>
@@ -167,13 +167,14 @@
       </div>
 
       <!-- Donated history -->
-       <div>
-
+       <div id="history-container" class="hidden">
+        <p class="text-base" id="date"></p>
+        
        </div>
       
     </main>
     <footer></footer>
-
+<br>
     <script src="./js/utilities.js"></script>
     <script src="./js/index.js"></script>
 </body>
