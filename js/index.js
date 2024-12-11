@@ -53,7 +53,7 @@ document.getElementById('donate-button').addEventListener('click', function(){
   </p>
    
 
-    <p> ${inputField1} Taka is Donated for Donate for flood ${document.getElementById('address-1').innerText} 
+    <p> ${inputField1} Taka is Donated for ${document.getElementById('address-1').innerText} 
     <br>
     <br>
     <hr>
@@ -100,7 +100,7 @@ document.getElementById('donate-button2').addEventListener('click', function(){
   </p>
    
 
-    <p> ${inputField1} Taka is Donated for Donate for flood ${document.getElementById('address-2').innerText} 
+    <p> ${inputField1} Taka is Donated for  ${document.getElementById('address-2').innerText} 
     <br>
     <br>
     <hr>
@@ -145,7 +145,7 @@ document.getElementById('donate-button3').addEventListener('click', function(){
   </p>
    
 
-    <p> ${inputField1} Taka is Donated for Donate for ${document.getElementById('address-3').innerText} 
+    <p> ${inputField1} Taka is Donated for ${document.getElementById('address-3').innerText} 
     <br>
     <br>
     <hr>
