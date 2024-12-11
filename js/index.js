@@ -1,5 +1,5 @@
 // console.log('js connected');
-
+// card-1
 document.getElementById('donate-button').addEventListener('click', function(){
 //     console.log('donate button clicked');
 //     const inputFiled=parseFloat(document.getElementById('input-value-1').value);
@@ -17,14 +17,27 @@ document.getElementById('donate-button').addEventListener('click', function(){
     
     // const balanceMain=document.getElementById('balance-main');
     // console.log('clicked balance')
-    
+  
     const inputField1=getInputFieldById('input-value-1');
+    if(isNaN(inputField1) || inputField1<=0){
+      alert ('Invalid Input Donation');
+      return;
+    }
+    // if(isNaN(donationField1)|| donationField1<=0){
+    //   alert ('Invalid Input donation');
+    //   return;
+    // }
     const donationField1=getBalance('donation-1');
+
+    
     const balance=getSum(inputField1, donationField1);
     document.getElementById('donation-1').innerText=balance.toFixed(2);
     const mainBalance=getBalance('balance-main');
     const newBalance=mainBalance - inputField1;
     document.getElementById('balance-main').innerText=newBalance.toFixed(2);
+
+    document.getElementById('review-container').classList.remove('hidden');
+
 
     const now=new Date();
     const historySection1=document.createElement('div');
@@ -54,16 +67,24 @@ document.getElementById('donate-button').addEventListener('click', function(){
     historyContainer.appendChild(historySection1);
 
 });
-
+// card-2
 document.getElementById('donate-button2').addEventListener('click', function(){
-   
+ 
     const inputField1=getInputFieldById('input-value-2');
+  
+    if(isNaN(inputField1) || inputField1<=0){
+      alert ('Invalid Input Donation');
+      return;
+    }
+
     const donationField1=getBalance('donation-2');
     const balance=getSum(inputField1, donationField1);
     document.getElementById('donation-2').innerText=balance.toFixed(2);
     const mainBalance=getBalance('balance-main');
     const newBalance=mainBalance - inputField1;
     document.getElementById('balance-main').innerText=newBalance.toFixed(2);
+
+    document.getElementById('review-container-2').classList.remove('hidden');
 
     const now=new Date();
     const historySection1=document.createElement('div');
@@ -92,14 +113,23 @@ document.getElementById('donate-button2').addEventListener('click', function(){
     const historyContainer=document.getElementById('history-container');
     historyContainer.appendChild(historySection1);
 });
+
+// card-3
 document.getElementById('donate-button3').addEventListener('click', function(){
     const inputField1=getInputFieldById('input-value-3');
+
+    if(isNaN(inputField1) || inputField1<=0){
+      alert ('Invalid Input Donation');
+      return;
+    }
     const donationField1=getBalance('donation-3');
     const balance=getSum(inputField1, donationField1);
     document.getElementById('donation-3').innerText=balance.toFixed(2);
     const mainBalance=getBalance('balance-main');
     const newBalance=mainBalance - inputField1;
     document.getElementById('balance-main').innerText=newBalance.toFixed(2);
+
+    document.getElementById('review-container-3').classList.remove('hidden');
 
     const now=new Date();
     const historySection1=document.createElement('div');
@@ -154,4 +184,20 @@ cardSection.classList.remove('hidden');
 
 document.getElementById('blog').addEventListener('click', function(){
 window.location.href='/blog.html';
+});
+
+// card-1
+
+document.getElementById('close-btn').addEventListener('click', function(){
+  document.getElementById('review-container').classList.add('hidden');
+});
+// card-2
+
+document.getElementById('close-btn-2').addEventListener('click', function(){
+  document.getElementById('review-container-2').classList.add('hidden');
+});
+// card-3
+
+document.getElementById('close-btn-3').addEventListener('click', function(){
+  document.getElementById('review-container-3').classList.add('hidden');
 });

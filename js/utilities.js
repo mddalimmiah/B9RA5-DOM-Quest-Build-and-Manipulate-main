@@ -19,16 +19,15 @@ function getSum(number1, number2){
     return sum;
 }
 
-// function mainBalance(mainBalance, inputField){
-//     const balance=parseFloat(mainBalance - inputField);
-//     return balance;
-// }
+
 
 // function validationInputField(id){
-// //     const input=document.getElementById(id).value;
-// //     if(isNaN(input) || input <0){
-// //         return 'invalid input field';
-// //     }
-// // }
+//     const input=document.getElementById(id).value;
+//     if(isNaN(input) || input <0){
+//         alert('invalid donation');
+//         return null;
+//     }
+//     return input;
+// }
 
 // function addToHistory()

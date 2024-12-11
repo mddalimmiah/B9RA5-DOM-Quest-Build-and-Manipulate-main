@@ -1,13 +1,13 @@
 // console.log('blog connected');
 
-document.getElementById('home').addEventListener('keyenter', function(){
+document.getElementById('home').addEventListener('click', function(){
     window.location.href='/index.html';
   })
 
-  function getInputFieldById(id){
-    const inputField=document.getElementById(id);
-    return inputField;
-  }
+  // function getInputFieldById(id){
+  //   const inputField=document.getElementById(id);
+  //   return inputField;
+  // }
 
   const inputField=document.getElementById('input-comment');
   const commentContainer=document.getElementById('comment-container');
@@ -49,9 +49,41 @@ inputField2.addEventListener('keypress', function(event){
       const newComment=inputField2.value;
       p.innerText=newComment;
 
-      const commentContainer2=document.getElementById('comment-container');
+      const commentContainer2=document.getElementById('comment-container2');
       commentContainer2.appendChild(p);
       inputField2.value='';
+      
+  }
+});
+// comment 3
+const inputField3=document.getElementById('input-comment3');
+const commentContainer3=document.getElementById('comment-container3');
+inputField3.addEventListener('keypress', function(event){
+  if(event.key==='Enter'){
+
+      const p=document.createElement('p');
+      const newComment=inputField3.value;
+      p.innerText=newComment;
+
+      const commentContainer3=document.getElementById('comment-container3');
+      commentContainer3.appendChild(p);
+      inputField2.value='';
+      
+  }
+});
+// comment 4
+const inputField4=document.getElementById('input-comment4');
+const commentContainer4=document.getElementById('comment-container4');
+inputField4.addEventListener('keypress', function(event){
+  if(event.key==='Enter'){
+
+      const p=document.createElement('p');
+      const newComment=inputField4.value;
+      p.innerText=newComment;
+
+      const commentContainer4=document.getElementById('comment-container4');
+      commentContainer4.appendChild(p);
+      inputField4.value='';
       
   }
 });
