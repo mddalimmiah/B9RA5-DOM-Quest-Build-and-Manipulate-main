@@ -1,8 +1,8 @@
-// console.log('blog connected');
+console.log('blog connected');
 
 document.getElementById('home').addEventListener('click', function(){
     window.location.href='/index.html';
-  })
+  });
 
 
 
