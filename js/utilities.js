@@ -31,3 +31,4 @@ function getSum(number1, number2){
 // }
 
 // function addToHistory()
+
