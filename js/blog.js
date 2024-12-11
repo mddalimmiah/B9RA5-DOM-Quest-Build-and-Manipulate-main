@@ -4,10 +4,7 @@ document.getElementById('home').addEventListener('click', function(){
     window.location.href='/index.html';
   })
 
-  // function getInputFieldById(id){
-  //   const inputField=document.getElementById(id);
-  //   return inputField;
-  // }
+
 
   const inputField=document.getElementById('input-comment');
   const commentContainer=document.getElementById('comment-container');
@@ -25,20 +22,7 @@ document.getElementById('home').addEventListener('click', function(){
     }
   });
 
-//   getInputFieldById('input-comment2').addEventListener('keypress', function(event){
-    
-//     if(event.key==='Enter'){
-//         const inputValue=getInputFieldById('input-comment2').value;
-//         const p=document.createElement('p');
-//         p.innerText=inputValue;
-//         const commentContainer2=document.getElementById('comment-container');
-//         commentContainer2.appendChild(p);
-//         inputValue='';
-//     }
-//   });
 
-
-// comment 2
 
 const inputField2=document.getElementById('input-comment2');
 const commentContainer2=document.getElementById('comment-container2');
